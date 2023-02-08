@@ -22,7 +22,7 @@ title: Connecting-the-Dots
 email: alikaan.guven@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   All about providing some examples to the topics that seems to be boring, but very interesting to demystify!
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  alikaanguven
