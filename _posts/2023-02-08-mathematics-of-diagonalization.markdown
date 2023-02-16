@@ -4,6 +4,62 @@ title:  "Mathematics of Diagonalization"
 date:   2023-02-13 18:52:00 +0300
 categories: jekyll update
 ---
+### Summary for TL;DR community
+
+$$
+\begin{equation}
+A = Q \Lambda Q^{-1}
+\end{equation}
+$$
+
+1. If an $A_{n \times n}$ matrix has $n$ distinct eigenvalues:  
+
+    $Q$ is the matrix where all the columns are eigenvectors of $A$, and $Q$ is invertible.  
+    $\Lambda$ is a diagonal matrix with Complex eigenvalues of $A$ as its entries.  
+
+2. If an $A_{n \times n}$ matrix is Real and symmetric:  
+
+    $Q$ is the matrix where all the columns are eigenvectors of $A$, and $Q$ is orthogonal.  
+    $\Lambda$ is a diagonal matrix with Real eigenvalues of $A$ as its entries.  
+
+3. If an $A_{n \times n}$ matrix is Hermitian:
+
+    $Q$ is the matrix where all the columns are eigenvectors of $A$, and $Q$ is unitary.  
+    $\Lambda$ is a diagonal matrix with Real eigenvalues of $A$ as its entries.  
+
+4. If an $A_{n \times n}$ matrix is normal:
+
+    $Q$ is the matrix where all the columns are eigenvectors of $A$, and $Q$ is unitary.  
+    $\Lambda$ is a diagonal matrix with Complex eigenvalues of $A$ as its entries.  
+<br/><br/>
+<br/><br/>
+  
+$$
+\begin{equation}
+M = L M_{diag} L^{\intercal}
+\end{equation}
+$$
+
+
+* If an $M_{n \times n}$ matrix is Complex and symmetric (Autonne-Takagi):
+
+    $M$ is a diagonal matrix with non-negative eigenvalues of $M^\dagger M$ as its entries.  
+    The columns of $L$ are eigenvectors of $M M^\dagger$.  
+
+$$
+\begin{equation}
+M = L M_{diag} R^{\dagger}
+\end{equation}
+$$
+
+* If an $A_{m \times n}$ matrix is normal (SVD):
+
+    $M$ is a diagonal matrix with non-negative eigenvalues of $A^\dagger A$ as its entries.  
+    The columns of $L$ are eigenvectors of $M M^\dagger$.  
+    The columns of $R$ are eigenvectors of $M^\dagger M$.
+
+<br/><br/>
+<br/><br/>
 
 ### SPECTRAL THEOREM
 
@@ -138,7 +194,7 @@ $$
 **But:**  $\lambda \neq \mu$,  
 **Then:** $\langle v | w \rangle = 0$ should be true. *Q.E.D.*
 
-So far we have demonstrated that the eigenvalues of Hermitian matrices are Real, and eigenvalues for different eigenvectors are orthogonal, but these demonstrations are proved only for matrices with simple spectrum. Let's define what simple spectrum is.
+So far we have demonstrated that the eigenvalues of Hermitian matrices are Real, and eigenvectors for different eigenvalues are orthogonal, but these demonstrations are useful only for the diagonalization of matrices with a simple spectrum. Let's define what simple spectrum is.
 
 **Definition:** If $A_{n \times n}$ is a matrix with all different eigenvalues, A is called to have a **simple spectrum**.
 
@@ -241,6 +297,42 @@ $$
 This final equation $\ref{completeness}$ will be useful in the next proof. I anticipate there might be one single confusion with the equation $\ref{relation_harvard}$. It took me a while to understand, but we can summarize this technique as $B y = \sum_{k} b_k y_k$, where $b_k$ are the columns of $B$, and $y_k$ are the elements of the vector $y$[$^{[5]}$](https://math.stackexchange.com/questions/331826/expressing-a-matrix-as-an-expansion-of-its-eigenvalues). If everything is fine upto this point, we can continue with the rest of the proof.
 
 Well done! We are now arriving at the "wiggle theorem", or the "perturbation theorem". Beware physicists! This is not the perturbation theory of physics, however you will see that it bears strong resemblance to the perturbation theory used in physics.
+
+**Wiggle Theorem:** A symmetric (Hermitian) matrix can be approximated by symmetric (Hermitian) matrices with simple spectrum [$^{[3]}$](https://people.math.harvard.edu/~knill/teaching/math22b2019/handouts/lecture17.pdf).
+
+**Proof**  
+  
+**Let** $A$ be an $n \times n$ symmetric (Hermitian) matrix. It has an eigenvalue $\lambda_1$ and an eigenvector $v_1$.
+
+**Assume** $v_1$ is normalized.
+
+**Define:**
+$$
+\begin{align}
+A(t) &= A + t v_1 v_1^{\dagger} \\
+&OR \nonumber \\
+A(t) &= A + t |v_1\rangle \langle v_1| 
+\end{align}
+$$
+
+
+
+By completeness relation, this $A(t)$ has the same eigenvector $v_1$ with a slighlty different eigenvalue $(\lambda_1 + t)$.
+Remember that the eigenvalues of symmetric/Hermitian matrices were Real. Therefore this new $t$ should also be Real.  
+  
+The above equations show that a curve $A(t)$ can be defined in such a way that all the eigenvectors stay constant, and the eigenvalues are slighly perturbed.  
+  
+Still, we require that there should be $n$ distinct eigenvectors in $A$. How do we know that Hermitian matrices have this property? Check [$^{[6]}$](https://math.stackexchange.com/questions/227695/n-distinct-eigenvectors-for-an-n-times-n-hermitian-matrix). The proof involves Schur decomposition, and if you don't know that see the proof of Schur decomposition here [$^{[7]}$](https://www.statlect.com/matrix-algebra/Schur-decomposition). This is necessary to obtain an invertible $Q$ matrix where all the columns are linearly independent. What we aim to do is to diagonalize a matrix where it does not have $n$ distinct eigenvalues. The repeated eigenvalues can be slightly perturbed to obtain a new matrix with a simple spectrum $A(t)$. However, at the end of our calculations, we need to prove that this diagonalizations still exists in the limit $t \rightarrow 0$. Let's continue our discussion.  
+  
+Imagine that we have defined that matrix $A(t)$ with simple spectrum. This means we finally obtained $n$ distinct eigenvalues. Remember that the matrix $Q$ was constructed from the eigenvectors of $A$, thus also $A(t)$. The matrix $A$ was Hermitian, which means the eigenvectors for different eigenvalues are also orthogonal. If they are orthogonal, I can obtain my new $Q(t)$ from orthonormal eigenvectors of $A(t)$. But hey were the eigenvalues of $A$ originally, so I will call them simly $Q$. Thus:  
+
+$$
+A(t) = Q \Lambda(t) Q^{-1}
+$$
+
+Taking the limit $t \rightarrow 0$ we obtain eq. the eq. $\ref{diagonalization}$. Thus we proved all the Hermitian matrices are diagonalizable via use of unitary matrices, and all the symmetric matrices are diagonalizable by using orthogonal matrices.
+
+  
 
 <!-- $$
 \begin{align}
