@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-22T14:53:14+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Connecting-the-Dots</title><subtitle>All about providing some examples to the topics that seems to be boring, but very interesting to demystify!</subtitle><entry><title type="html">Angular Correlations and The First Insight Behind X17 Existence</title><link href="http://localhost:4000/jekyll/update/2023/02/21/angular_correlation.html" rel="alternate" type="text/html" title="Angular Correlations and The First Insight Behind X17 Existence" /><published>2023-02-21T17:29:00+03:00</published><updated>2023-02-21T17:29:00+03:00</updated><id>http://localhost:4000/jekyll/update/2023/02/21/angular_correlation</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/02/21/angular_correlation.html"><![CDATA[<p>In this post Lorentz transformations, effects of boosting on opening angles, and how the former two can help making a new discovery will be covered.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-22T15:09:56+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Connecting-the-Dots</title><subtitle>All about providing some examples to the topics that seems to be boring, but very interesting to demystify!</subtitle><entry><title type="html">Angular Correlations and The First Insight Behind X17 Existence</title><link href="http://localhost:4000/jekyll/update/2023/02/21/angular_correlation.html" rel="alternate" type="text/html" title="Angular Correlations and The First Insight Behind X17 Existence" /><published>2023-02-21T17:29:00+03:00</published><updated>2023-02-21T17:29:00+03:00</updated><id>http://localhost:4000/jekyll/update/2023/02/21/angular_correlation</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/02/21/angular_correlation.html"><![CDATA[<p>In this post Lorentz transformations, effects of boosting on opening angles, and how the former two can help making a new discovery will be covered.<br />
 First things first.</p>
 
 <h3 id="lorentz-transformations">Lorentz Transformations</h3>
 
 <p>Lorentz transformations are the special relativistic transformations that account for rotations and relativistic boosts. It describes how a constant motion in one reference frame is seen from another reference frame including the special relativistic effects.</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/frames.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/frames.png" /></div>
 
 <p>The motion in the inertial frame of reference $S$ can be described in another inertial reference frame $S’$ as below:</p>
 
@@ -109,9 +109,9 @@ cos(\theta) = \frac{\vec{p_{e^+}} \cdot \vec{p_{e^-}}}{\lvert \lvert \vec{p_{e^+
 
 <p>Phew! Fotunately we have computers and don’t need to go through all this pain again. Let’s see some examples:</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/boost1.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/boost1.png" /></div>
 <p><br /><br /></p>
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/boost2.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/boost2.png" /></div>
 
 <p>In the figures above you might notice X17 frame. For now, just think of X17 as a particle that decays at rest, therefore when I reference X17 frame I am talking about the CM frame. The second figure shows the minimum angle that is measured at the LAB frame, whereas at the CM frame we know that the opening angle always equals to $180^\circ$. There is an easier method to find the minimum opening angle. If the $e^+e^-$ pair moves on an axis perpendicular to the axis of boost, then the minimum opening angle calculation is as follows:</p>
 
@@ -142,16 +142,16 @@ cos(\theta) = \frac{\vec{p_{e^+}} \cdot \vec{p_{e^-}}}{\lvert \lvert \vec{p_{e^+
 
 <p>When we perform a Monte-Carlo (MC) simulation, and assume a uniform distribution for the angular distribution of the $e^+e^-$ pair at the CM frame, we see a modified distribution in the LAB frame.</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/histo1.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/histo1.png" /></div>
 
 <p>Say we observe them both in a decay, as in the figure below. Then what we could infer is that we might be observing a decay at rest, and another decay in a boosted frame. However, this is not always the case and this should never be generalized. Here, we only give this picture as a toy model:</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/histo2.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/histo2.png" /></div>
 
 <p><br /><br /></p>
 <h3 id="a-more-realistic-picture-hypothetical-x17-particle">A More Realistic Picture: Hypothetical X17 Particle</h3>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/ATOMKI.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/ATOMKI.png" /></div>
 <p><em>Reference:</em> <a href="https://arxiv.org/abs/1608.03591"><em>arXiv:1608.03591</em></a></p>
 
 <p>In 2016 at ATOMKI laboratories in Hungary, scientist observed an anomaly in the $^8Be$ decay. They bombarded a $^7Li$ target with protons and measured an excess of particles scattering with large opening angles. According to the theory they were expexting only an anisotropic distribution of $e^+e^-$ particles which emerge from internal pair creation (IPC) events via the decay of excited \(^8Be^*\) atoms. They found that this excess can be explained if the \(^8Be^*\) atom first decays into a hypothetical boson ($X17$) and then the boson decays into $e^+e^-$ pairs. Since the X17 decays in a moving CM frame the angular distributions measured will accrete in the larger angles. We will not cover all the details of the experiment, but only show how such a distribution can be generated and analysed on your PC.</p>
@@ -164,25 +164,25 @@ W(\theta) = A_0 + 0.56A_1cos(\theta) + 0.23A_2cos(\theta)^2,
 
 <p>where the parameters are $A_0=1$, $A_1=0.56$, $A_2=0.23$ could be a starting point. To generate random samples following a custom function, one needs to input a uniform random variable in the inverse cumulative distribution function. After that, each uniform random variable that your computer generates will be accurately matched to your custom distribution function. See them below:</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/custom_pdf.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/custom_pdf.png" /></div>
 
 <p>These account for the IPC events. Now, adding X17 decay signals in the picture, we obtain the following histogram:</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/histo3.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/histo3.png" /></div>
 
 <p>Here, the red histogram shows the distribution of the anisotropic IPC distribution, and the blue one is the distribution of all the generated signals (including the X17 decays). To get these histograms, I generated 10,000 IPC events, and 400 X17 decays.</p>
 
 <p>The next step is the background subtraction from the signal region and measure the statistical significance of the signals. A simple calssic method to do that is “the sideband subtraction”. The background is fitted in the regions where the signals is not expected to be present, and then this fitted level is subtracted from the total measurements, leaving only the signals. Then the significances of the measuremetns can be evaluated. Both of these results can be seen below:</p>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/histo4.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/histo4.png" /></div>
 
-<div style="text-align: center"><img src="assets/images/pair_angular_correlation/histo5.png" /></div>
+<div style="text-align: center"><img src="/assets/images/pair_angular_correlation/histo5.png" /></div>
 
 <p><br /><br /></p>
 
 <p>These calculations were only a mere demonstration of the subject which might draw interest of some people, and perhaps help them make great discoveries someday.</p>
 
-<p><strong>N.B.</strong> You can find the code that is used to generate the plots <a href="https://www.github.com/alikaanguven/connecting-the-dots.github.io/tree/mainassets/notebooks/pair_angular_correlations">here</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[In this post Lorentz transformations, effects of boosting on opening angles, and how the former two can help making a new discovery will be covered. First things first.]]></summary></entry><entry><title type="html">Mathematics of Diagonalization</title><link href="http://localhost:4000/jekyll/update/2023/02/13/mathematics-of-diagonalization.html" rel="alternate" type="text/html" title="Mathematics of Diagonalization" /><published>2023-02-13T18:52:00+03:00</published><updated>2023-02-13T18:52:00+03:00</updated><id>http://localhost:4000/jekyll/update/2023/02/13/mathematics-of-diagonalization</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/02/13/mathematics-of-diagonalization.html"><![CDATA[<h3 id="summary-for-tldr-community">Summary for TL;DR community</h3>
+<p><strong>N.B.</strong> You can find the code that is used to generate the plots <a href="https://www.github.com/alikaanguven/connecting-the-dots.github.io/tree/main/assets/notebooks/pair_angular_correlations">here</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[In this post Lorentz transformations, effects of boosting on opening angles, and how the former two can help making a new discovery will be covered. First things first.]]></summary></entry><entry><title type="html">Mathematics of Diagonalization</title><link href="http://localhost:4000/jekyll/update/2023/02/13/mathematics-of-diagonalization.html" rel="alternate" type="text/html" title="Mathematics of Diagonalization" /><published>2023-02-13T18:52:00+03:00</published><updated>2023-02-13T18:52:00+03:00</updated><id>http://localhost:4000/jekyll/update/2023/02/13/mathematics-of-diagonalization</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/02/13/mathematics-of-diagonalization.html"><![CDATA[<h3 id="summary-for-tldr-community">Summary for TL;DR community</h3>
 
 \[\begin{equation}
 A = Q \Lambda Q^{-1}
