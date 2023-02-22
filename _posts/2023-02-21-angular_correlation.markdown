@@ -212,4 +212,4 @@ The next step is the background subtraction from the signal region and measure t
 
 These calculations were only a mere demonstration of the subject which might draw interest of some people, and perhaps help them make great discoveries someday.
   
-**N.B.** You can find the code that is used to generate the plots [here](github.com/alikaanguven/connecting-the-dots.github.io/tree/main/assets/notebooks/pair_angular_correlations).
+**N.B.** You can find the code that is used to generate the plots [here](https://www.github.com/alikaanguven/connecting-the-dots.github.io/tree/main/assets/notebooks/pair_angular_correlations).
