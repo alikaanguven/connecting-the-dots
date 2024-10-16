@@ -72,7 +72,7 @@ Spectral theorem is all about when and how a matrix can be diagonalized.
 $$
 \begin{align}
 Av &= \lambda v \\
-A Q &= \Lambda Q \\ \nonumber \\
+A Q &= Q \Lambda \\ \nonumber \\
 
 A_{n \times n}
 
