@@ -86,19 +86,19 @@ A_{n \times n}
 &=
 
 \begin{bmatrix}
+    v_{11} & v_{21} & \dots & v_{n1} \\
+    v_{12} & v_{22} & \dots & v_{n2} \\
+    \vdots & \vdots & \ddots &  \\
+    v_{1n} & v_{2n} &  & v_{nn} \\
+\end{bmatrix}
+
+\begin{bmatrix}
     \lambda_{1} &  &  &  \\
         & \lambda_{2} &  &  \\
         &  & \ddots &  \\
         &  &  & \lambda_{n} \\
 \end{bmatrix}
 
-
-\begin{bmatrix}
-    v_{11} & v_{21} & \dots & v_{n1} \\
-    v_{12} & v_{22} & \dots & v_{n2} \\
-    \vdots & \vdots & \ddots &  \\
-    v_{1n} & v_{2n} &  & v_{nn} \\
-\end{bmatrix}
 
 
 \end{align}
